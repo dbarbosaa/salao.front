@@ -21,6 +21,9 @@ const UsuarioPage = lazy(() => import('./Pages/UsuarioPage/UsuarioPage'));
 // Páginas de Profissional com Lazy Loading
 const ProfissionalPage = lazy(() => import('./Pages/ProfissionalPage/ProfissionalPage'));
 
+// Páginas de Serviços com Lazy Loading
+const ServicoPage = lazy(() => import('./Pages/ServicoPage/ServicoPage'));
+
 const container: any = document.getElementById('root');
 
 const root = createRoot(container);
@@ -47,6 +50,7 @@ root.render(
                 <Route>
                   <Route path={`${import.meta.env.BASE_URL}usuario`} element={<UsuarioPage />} />
                   <Route path={`${import.meta.env.BASE_URL}profissional`} element={<ProfissionalPage />} />
+                  <Route path={`${import.meta.env.BASE_URL}servicos`} element={<ServicoPage />} />
                 </Route>
               </Route>
             </Routes>
@@ -55,4 +59,4 @@ root.render(
       </AuthProvider>
     </BrowserRouter>
   </Fragment>
-)
+);

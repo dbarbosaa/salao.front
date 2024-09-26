@@ -26,7 +26,7 @@ export const MENUITEMS: any = [
 
                     { path: `${import.meta.env.BASE_URL}profissional`, type: 'link', active: false, selected: false, title: 'Profissional' },
                     { path: `${import.meta.env.BASE_URL}cliente`, type: 'link', active: false, selected: false, title: 'Cliente' },
-                    { path: `${import.meta.env.BASE_URL}servico`, type: 'link', active: false, selected: false, title: 'Serviço' },
+                    { path: `${import.meta.env.BASE_URL}servicos`, type: 'link', active: false, selected: false, title: 'Serviço' },
                 ]
             },
 
