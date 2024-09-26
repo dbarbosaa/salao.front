@@ -120,7 +120,7 @@ const ServicoPage = () => {
 
     const schema = Yup.object().shape({
         nome: Yup.string().required('Nome é obrigatório'),
-        preco: Yup.number().required('Preço é obrigatório').min(0, 'Preço deve ser maior que zero'),
+        valor: Yup.number().required('Preço é obrigatório').min(0, 'Preço deve ser maior que zero'),
         descricao: Yup.string().required('Descrição é obrigatória'),
     });
 
@@ -198,7 +198,7 @@ const ServicoPage = () => {
                         <Col lg={6}>
                             <Form.Group>
                                 <Form.Label>Informe o preço: </Form.Label>
-                                <Form.Control isValid={formik.touched.valor && !formik.errors.valor} {...formik.getFieldProps('preco')} type="number" placeholder="Preço do serviço" />
+                                <Form.Control isValid={formik.touched.valor && !formik.errors.valor} {...formik.getFieldProps('valor')} type="number" placeholder="Preço do serviço" />
                                 <AlertValidation text={formik.errors.valor}></AlertValidation>
                             </Form.Group>
                         </Col>
