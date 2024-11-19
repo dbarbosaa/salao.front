@@ -32,7 +32,7 @@ export const MENUITEMS: any = [
 
             {
                  title: 'Agendamento', icon: (null), type: 'sub', active: false, children: [
-                    { path: `${import.meta.env.BASE_URL}servicorealizado`, type: 'link', active: false, selected: false, title: 'Fechar Serviço' },
+                    { path: `${import.meta.env.BASE_URL}servicorealizado`, type: 'link', active: false, selected: false, title: 'Serviço Realizado' },
 
                  ]
 
