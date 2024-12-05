@@ -67,12 +67,7 @@ const ProfissionalPage = () => {
             sortable: true,
             wrap: true
         },
-        {
-            name: 'Status',
-            cell: (row: IProfissional) => {
-                return (row.ativo ? <Link className="btn btn-success btn-sm" to="#">Ativo</Link> : <Link className="btn btn-danger btn-sm" to="#">Inativo</Link>)
-            },
-        },
+        
         {
             name: 'Opções',
             cell: (profissional: IProfissional) => {
