@@ -66,12 +66,6 @@ const ServicoPage = () => {
             wrap: true
         },
         {
-            name: 'Status',
-            cell: (row: IServico) => {
-                return (row.ativo ? <Link className="btn btn-success btn-sm" to="#">Ativo</Link> : <Link className="btn btn-danger btn-sm" to="#">Inativo</Link>)
-            },
-        },
-        {
             name: 'Opções',
             cell: (servico: IServico) => {
                 return (
